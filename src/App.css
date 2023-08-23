@@ -1,0 +1,40 @@
+#nav{
+  background-color:#ad1212;
+  height: 800px;
+  width:130px;
+  float:left;
+  padding:5px;
+ }
+
+ li a:hover {
+  background-color: #ff9292;
+  color: #000000;
+}
+
+li a:visited {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+li a {
+  font-family:Calibri;
+  font-size: 14pt;
+  font-style:none;
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+  padding: 9px;
+  margin-top: 20px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ad1212;
+  text-align: center;
+}
+
