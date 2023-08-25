@@ -10,7 +10,7 @@ function App() {
       <div>
         <div className='h-nbar'>
           <div className='et-title'>
-            <text>etisalat by e&</text>
+            <span>etisalat by e&</span>
           </div>
         </div>
         <VerticalMenu />

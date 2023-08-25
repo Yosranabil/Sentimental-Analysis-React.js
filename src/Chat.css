@@ -1,4 +1,4 @@
-.container{
+.conv-container{
     width: 950px;
     height: 400px;
     background-color: white;
@@ -7,4 +7,46 @@
     justify-content: center;
     margin: 20px 0 0 100px;
     border-radius: 15px;
+}
+
+.conv-analysis{
+    width: 950px;
+    height: 145px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 0 100px;
+    border-radius: 15px;
+}
+
+.conv-container-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+td{
+    width: 200px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.w3-container{
+    font-weight: 400;
+    font-size: smaller;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 15px;
+    width: 200px;
+    background-color: rgb(236, 11, 11);
+    color: white;
 }
