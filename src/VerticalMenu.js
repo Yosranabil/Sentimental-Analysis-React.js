@@ -24,7 +24,7 @@ function VerticalMenu() {
             <FontAwesomeIcon className="fas" icon={faUser} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item'>Profile</span>
           </Link></li>
-          <li><Link to='/Home'>
+          <li><Link to='/Analysis'>
             <FontAwesomeIcon className="fas" icon={faChartSimple} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item'>Analytics</span>
           </Link></li>
