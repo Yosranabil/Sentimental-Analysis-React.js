@@ -1,38 +1,61 @@
-.App {
+#nav{
+  background-color:#ad1212;
+  height: 800px;
+  width:130px;
+  float:left;
+  padding:5px;
+  position: fixed;
+  top: 0; 
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+
+
+ }
+
+ li a:hover {
+  background-color: #ff9292;
+  color: #000000;
+}
+
+li a:visited {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+li a {
+  font-family:Calibri;
+  font-size: 14pt;
+  font-style:none;
+  display: block;
+  color: #FFFFFF;
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+  padding: 9px;
+  margin-top: 20px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ad1212;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chart-header {
+  text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.chart {
   display: flex;
-  flex-direction: column;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh; /* Adjust the height as needed */
+
+  /* Adjust the following styles to shift the pie to the left */
+  margin-left: 120px; /* Adjust the margin value */
+  margin-top: 130px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
