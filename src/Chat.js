@@ -2,7 +2,7 @@ import React from 'react';
 import './Chat.css';
 
 
-function ChatContainer() {
+function Chat() {
   return (
     <div className='container'>
         
@@ -10,4 +10,4 @@ function ChatContainer() {
   );
 }
 
-export default ChatContainer;
+export default Chat;

@@ -1,18 +1,25 @@
 import React from 'react';
 import './App.css';
 import VerticalMenu from './VerticalMenu';
-import './VerticalMenu'
-import ChatContainer from './Chat';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Chat from './Chat'; 
 
 function App() {
   return (
-    <div>
-      <div className='h-nbar'>
-        <img className='et-icon' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Etisalat_eand_Logo_EN.svg/424px-Etisalat_eand_Logo_EN.svg.png' align="right"/>
+    <Router>
+      <div>
+        <div className='h-nbar'>
+          <div className='et-title'>
+            <text>etisalat by e&</text>
+          </div>
+        </div>
+        <VerticalMenu />
+        <Routes>
+          <Route path="/Chat" Component={Chat} />
+          {/* Other routes */}
+        </Routes>
       </div>
-      <VerticalMenu />
-      <ChatContainer />
-    </div>
+    </Router>
   );
 }
 

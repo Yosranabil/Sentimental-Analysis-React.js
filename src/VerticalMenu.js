@@ -1,44 +1,41 @@
 import React from 'react';
 import './VerticalMenu.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faChartSimple } from '@fortawesome/free-solid-svg-icons';
-import { faComments } from '@fortawesome/free-solid-svg-icons';
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faChartSimple, faComments, faRightFromBracket, faCog } from '@fortawesome/free-solid-svg-icons';
 
 function VerticalMenu() {
   return (
     <div>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" to="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
       <nav>
         <ul>
             <li>
-              <a href='#' className='logo'>
-                <img src='https://ik.imagekit.io/tp/20220224-etisalat-group-new-logo.png' />
+              <Link to='#' className='logo'>
+                <img src='https://ik.imagekit.io/tp/20220224-etisalat-group-new-logo.png' alt=''/>
                 <span className="nav-item">Etisalat Egypt</span>
-              </a>
+              </Link>
             </li>
-          <li><a href='#'>
+          <li><Link to='/Chat'>
             <FontAwesomeIcon className="fas" icon={faComments} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item' align="left">Conversations</span>
-          </a></li>
-          <li><a href='#'>
+          </Link></li>
+          <li><Link to='#'>
             <FontAwesomeIcon className="fas" icon={faUser} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item'>Profile</span>
-          </a></li>
-          <li><a href='#'>
+          </Link></li>
+          <li><Link to='/Home'>
             <FontAwesomeIcon className="fas" icon={faChartSimple} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item'>Analytics</span>
-          </a></li>
-          <li><a href='#'>
+          </Link></li>
+          <li><Link to='#'>
             <FontAwesomeIcon className="fas" icon={faCog} style={{ color: "#000000", }} fontSize={15} />
             <span className='nav-item'>Settings</span>
-          </a></li>
-          <li><a href='#' className='logout'>
+          </Link></li>
+          <li><Link to='#' className='logout'>
             <FontAwesomeIcon className="fas" icon={faRightFromBracket} style={{ color: "#000000", }} fontSize={10} />
             <span className='nav-item'>LogOut</span>
-          </a></li>
+          </Link></li>
         </ul>
       </nav>
     </div>
