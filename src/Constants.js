@@ -1,6 +1,5 @@
 
-function constantData() 
-{
+function constantData() {
     const row1Data1 = [
         { text: 'جيد', percentage: '70%', color: 'w3-green' },
         { text: 'سيئة', percentage: '20%', color: 'w3-red' },
@@ -27,7 +26,52 @@ function constantData()
         { text: 'لا', percentage: '60%', color: 'w3-purple' },
         { text: 'مشكلة', percentage: '30%', color: 'w3-light-blue' },
     ];
-    return { row1Data1, row2Data1, row1Data2, row2Data2};
+
+    const messageData1 = [
+        {
+            text: "مرحباً",
+            sender: "CR",
+            timestamp: "12:15"
+        },
+        {
+            text: "مساء الخير يا فندم اقدر اساعد حضرتك في ايه",
+            sender: "AG",
+            timestamp: "12:30"
+        },
+        {
+            text: "اريد الاستعلام عن الرصيد",
+            sender: "CR",
+            timestamp: "12:35"
+        },
+        {
+            text: "تحت امرك",
+            sender: "AG",
+            timestamp: "12:44"
+        },
+        {
+            text: "علي نفس الرقم؟",
+            sender: "AG",
+            timestamp: "12:45"
+        },
+        {
+            text: "ايوة",
+            sender: "CR",
+            timestamp: "12:55"
+        },
+        {
+            text: "رصيد حضرتك 20 جنيه",
+            sender: "AG",
+            timestamp: "1:00"
+        }
+    ];
+
+    const messageData2 = [
+        { text: "مرحباً", sender: "CR", timestamp: "12:15" },
+        { text: "مساء الخير يا فندم اقدر اساعد حضرتك في ايه", sender: "AG", timestamp: "12:30" },
+    ];
+
+
+    return { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2 };
 }
 
 export default constantData;

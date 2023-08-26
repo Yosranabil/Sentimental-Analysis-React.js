@@ -21,6 +21,7 @@
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgb(0, 0, 0, 0.1);
   border-radius: 0 15px 15px 0;
+  z-index: 1;
  }
 
 .logo{

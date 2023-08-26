@@ -11,7 +11,7 @@ function VerticalMenu() {
       <nav>
         <ul>
             <li>
-              <Link to='#' className='logo'>
+              <Link to='' className='logo'>
                 <img src='https://ik.imagekit.io/tp/20220224-etisalat-group-new-logo.png' alt=''/>
                 <span className="nav-item">Etisalat Egypt</span>
               </Link>

@@ -3,6 +3,7 @@ import './App.css';
 import VerticalMenu from './VerticalMenu';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Chat from './Chat'; 
+import Add from './Add';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <VerticalMenu />
         <Routes>
           <Route path="/Chat" Component={Chat} />
-          {/* Other routes */}
+          <Route path="" Component={Add} />
         </Routes>
       </div>
     </Router>
