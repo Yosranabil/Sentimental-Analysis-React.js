@@ -1,0 +1,19 @@
+.chart-header {
+    text-align: center;
+  }
+  
+  .chart {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+     /* Specify the width of the pie chart using units */
+    height: 700px;
+     /* Specify the height of the pie chart using units */
+    /* Adjust the following styles to position the pie chart */
+    
+
+  }
+  
+  
+  
+  
