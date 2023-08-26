@@ -1,8 +1,8 @@
 import React from 'react';
 import './Analysis.css';
-import Chart from './Chart';
-import LineChart from './Line-Chart';
-import constantData from './Constants'; 
+import Chart from '../Components/Chart';
+import LineChart from '../Components/Line-Chart';
+import constantData from '../Constants'; 
 const {chart1Data, chart2Data} = constantData();
 
 function Analysis() {

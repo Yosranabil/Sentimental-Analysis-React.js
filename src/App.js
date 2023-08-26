@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import React from 'react';
-import Chat from './Chat'; 
-import Add from './Add';
-import Analysis from './Analysis'
-import VerticalMenu from './VerticalMenu';
+import Chat from './Pages/Chat'; 
+import Add from './Pages/Add';
+import Analysis from './Pages/Analysis'
+import VerticalMenu from './Components/VerticalMenu';
 
 function App() {
   return (
