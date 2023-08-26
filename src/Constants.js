@@ -70,8 +70,29 @@ function constantData() {
         { text: "مساء الخير يا فندم اقدر اساعد حضرتك في ايه", sender: "AG", timestamp: "12:30" },
     ];
 
+    const chart1Data = {
+        options: {
+            chart: {
+                id: "basic-pie-1",
+            },
+            labels: ['Neutral', 'Positive', 'Negative'],
+            colors: ['#F4DF17', '#45D21C', '#E72C09'],
+        },
+        series: [30, 40, 45],
+    };
 
-    return { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2 };
+    const chart2Data = {
+        options: {
+            chart: {
+                id: "basic-pie-2",
+            },
+            labels: ['Neutral', 'Positive', 'Negative'],
+            colors: ['#F4DF17', '#45D21C', '#E72C09'],
+        },
+        series: [25, 50, 20],
+    };
+
+    return { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2, chart1Data, chart2Data};
 }
 
 export default constantData;
