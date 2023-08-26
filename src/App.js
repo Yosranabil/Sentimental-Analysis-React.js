@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
-import VerticalMenu from './VerticalMenu';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import React from 'react';
 import Chat from './Chat'; 
-import Analysis from './Analysis.js';
+import Add from './Add';
+import Analysis from './Analysis'
+import VerticalMenu from './VerticalMenu';
 
 function App() {
   return (
@@ -11,14 +12,14 @@ function App() {
       <div>
         <div className='h-nbar'>
           <div className='et-title'>
-            <text>etisalat by e&</text>
+            <span>etisalat by e&</span>
           </div>
         </div>
         <VerticalMenu />
         <Routes>
           <Route path="/Chat" Component={Chat} />
+          <Route path="" Component={Add} />
           <Route path="/Analysis" Component={Analysis} />
-          {/* Other routes */}
         </Routes>
       </div>
     </Router>
