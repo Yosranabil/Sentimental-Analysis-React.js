@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Chat.css';
+import { Link } from 'react-router-dom';
 import constantData from '../Constants'; // Update the import path
 const { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2 } = constantData();
 
@@ -43,15 +44,19 @@ function Chat() {
                 <div className={`message ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`}>
                   <p>{message.text}<br /><span>{message.timestamp}</span></p>
                 </div>
-                <div className={`mssg-state ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`} style={{backgroundColor:message.color}}/>
+                <div className={`mssg-state ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`} style={{ backgroundColor: message.color }} />
               </div>
             ))}
           </div>
         </div>
-        <div className='buttons'>
-          <button onClick={handleDisplayChat1}>Display Conversation 1</button>
-          <br />
-          <button onClick={handleDisplayChat2}>Display Conversation 2</button>
+        <div className='chats-list'>
+          <div className='chats-list-container'>
+          <div className='buttons'>
+            <button onClick={handleDisplayChat1}>Display Conversation 1</button>
+            <br />
+            <button onClick={handleDisplayChat2}>Display Conversation 2</button>
+          </div>
+          </div>
         </div>
       </div>
       <div className='conv-analysis'>
