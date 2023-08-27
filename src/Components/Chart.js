@@ -2,7 +2,10 @@ import React from 'react';
 import './Chart.css';
 import ReactApexChart from 'react-apexcharts';
 
+
 function Chart(props) {
+
+      
     return (
         <div className="chart">
             <ReactApexChart
@@ -16,3 +19,6 @@ function Chart(props) {
 }
 
 export default Chart;
+
+
+

@@ -186,6 +186,73 @@ function constantData() {
         }
     ];
 
+    const lineChart1 = {
+        options: {
+            chart: {
+                id: 'line-chart',
+            },
+            xaxis: {
+                categories: ['15s', '30s', '45s', '60s', '1m15s', '1m30s', '1m45s'],
+            },
+        },
+        series: [
+            {
+                name: 'series-1',
+                data: [60, 75, 80, 75, 30,25,25],
+            },
+        ],
+    };
+    const lineChart2 = {
+        options: {
+            chart: {
+                id: 'line-chart',
+            },
+            xaxis: {
+                categories: ['15s', '30s', '45s', '60s', '1m15s', '1m30s', '1m45s'],
+            },
+        },
+        series: [
+            {
+                name: 'series-1',
+                data: [40, 35, 50, 80, 60,60,65],
+            },
+        ],
+    };
+
+    const lineChart12 = {
+        options: {
+            chart: {
+                id: 'line-chart-2',
+            },
+            xaxis: {
+                categories: ['15s', '30s', '45s', '60s', '1m15s', '1m30s', '1m45s'],
+            },
+        },
+        series: [
+            {
+                name: 'series-1',
+                data: [80, 80, 60, 40, 35,40,40],
+            },
+        ],
+    };
+
+    const lineChart22 ={
+        options: {
+            chart: {
+                id: 'line-chart-2',
+            },
+            xaxis: {
+                categories: ['15s', '30s', '45s', '60s', '1m15s', '1m30s', '1m45s'],
+            },
+        },
+        series: [
+            {
+                name: 'series-1',
+                data: [10, 30, 60, 80, 60,55,50],
+            },
+        ],
+    };
+
     const chart1Data = {
         options: {
             chart: {
@@ -197,6 +264,17 @@ function constantData() {
         series: [30, 40, 45],
     };
 
+    const chart1Data2 = {
+        options: {
+            chart: {
+                id: "basic-pie-1",
+            },
+            labels: ['Neutral', 'Positive', 'Negative'],
+            colors: ['#F4DF17', '#45D21C', '#E72C09'],
+        },
+        series: [10, 70, 5],
+    };
+
     const chart2Data = {
         options: {
             chart: { id: "basic-pie-2", },
@@ -205,8 +283,17 @@ function constantData() {
         },
         series: [25, 50, 20],
     };
+   
+    const chart2Data2 = {
+        options: {
+            chart: { id: "basic-pie-2", },
+            labels: ['Neutral', 'Positive', 'Negative'],
+            colors: ['#F4DF17', '#45D21C', '#E72C09'],
+        },
+        series: [5, 10, 80],
+    };
 
-    return { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2, chart1Data, chart2Data };
+    return { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2, chart1Data, chart2Data ,chart1Data2,chart2Data2,lineChart1,lineChart2,lineChart12,lineChart22};
 }
 
 export default constantData;
