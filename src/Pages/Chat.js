@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Chat.css';
-import constantData from '../Constants'; // Update the import path
+import constantData from '../Constants';
+import AudioPlayer from '../Components/Audio';
+import audioFile1 from '../audios/audio_1.ogg';
+import audioFile2 from '../audios/audio_2.ogg';
 const { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2 } = constantData();
 
 function Chat() {
@@ -18,18 +21,18 @@ function Chat() {
     setCurrentMessages(messageData2);
   };
 
-  let row1Data = [];
-  let row2Data = [];
-  let messageData = [];
+  let row1Data;
+  let row2Data;
+  let messageData;
 
   if (currentRows === 'row11' || currentMessages === messageData1) {
-    row1Data = row1Data.concat(row1Data1);
-    row2Data = row2Data.concat(row2Data1);
-    messageData = messageData.concat(messageData1);
+    row1Data = row1Data1;
+    row2Data = row2Data1;
+    messageData = messageData1;
   } else if (currentRows === 'row21' || currentMessages === messageData2) {
-    row1Data = row1Data.concat(row1Data2);
-    row2Data = row2Data.concat(row2Data2);
-    messageData = messageData.concat(messageData2);
+    row1Data = row1Data2;
+    row2Data = row2Data2;
+    messageData = messageData2;
   }
 
   return (
@@ -38,6 +41,9 @@ function Chat() {
       <div className="conv-container-wrapper">
         <div className='conv-container'>
           <div className='chatBox'>
+            <div className="audio-container">
+            <AudioPlayer audioFile={messageData === messageData1 ? audioFile1 : audioFile2} />
+            </div>
             {messageData.map((message, index) => (
               <div className="message-container" key={index}>
                 <div className={`message ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`}>
@@ -52,8 +58,8 @@ function Chat() {
           <div className='chats-list-container'>
             <h2>Conversations List</h2>
             <ul>
-              <li onClick={handleDisplayChat1}><span>1</span>List Item One</li>
-              <li onClick={handleDisplayChat2}><span>2</span>List Item Two</li>
+              <li onClick={handleDisplayChat1}><span>1</span>Call [01122780877]</li>
+              <li onClick={handleDisplayChat2}><span>2</span>Call [01153248888]</li>
             </ul>
           </div>
         </div>

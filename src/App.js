@@ -12,7 +12,7 @@ function App() {
       <div>
         <div className='h-nbar'>
           <div className='et-title'>
-            <span>etisalat by e&</span>
+            <img className='et-img' src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Etisalat_eand_Logo_EN.svg/424px-Etisalat_eand_Logo_EN.svg.png?20220922005712' alt=''/>
           </div>
         </div>
         <VerticalMenu />
