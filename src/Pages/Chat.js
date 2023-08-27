@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Chat.css';
-import { Link } from 'react-router-dom';
 import constantData from '../Constants'; // Update the import path
 const { row1Data1, row2Data1, row1Data2, row2Data2, messageData1, messageData2 } = constantData();
 
@@ -51,11 +50,11 @@ function Chat() {
         </div>
         <div className='chats-list'>
           <div className='chats-list-container'>
-          <div className='buttons'>
-            <button onClick={handleDisplayChat1}>Display Conversation 1</button>
-            <br />
-            <button onClick={handleDisplayChat2}>Display Conversation 2</button>
-          </div>
+            <h2>Conversations List</h2>
+            <ul>
+              <li><span>1</span>List Item One</li>
+              <li><span>2</span>List Item Two</li>
+            </ul>
           </div>
         </div>
       </div>
