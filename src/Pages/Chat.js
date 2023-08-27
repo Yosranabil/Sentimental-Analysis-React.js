@@ -43,15 +43,19 @@ function Chat() {
                 <div className={`message ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`}>
                   <p>{message.text}<br /><span>{message.timestamp}</span></p>
                 </div>
-                <div className={`mssg-state ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`} style={{backgroundColor:message.color}}/>
+                <div className={`mssg-state ${message.sender === 'CR' ? 'CR_message' : 'AG_message'}`} style={{ backgroundColor: message.color }} />
               </div>
             ))}
           </div>
         </div>
-        <div className='buttons'>
-          <button onClick={handleDisplayChat1}>Display Conversation 1</button>
-          <br />
-          <button onClick={handleDisplayChat2}>Display Conversation 2</button>
+        <div className='chats-list'>
+          <div className='chats-list-container'>
+            <h2>Conversations List</h2>
+            <ul>
+              <li><span>1</span>List Item One</li>
+              <li><span>2</span>List Item Two</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className='conv-analysis'>

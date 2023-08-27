@@ -2,7 +2,7 @@
 function constantData() {
     const row1Data1 = [
         { text: 'شحن', percentage: '20%', color: 'w3-red' },
-        { text: 'كرت', percentage: '35%', color: 'w3-red' },
+        { text: 'كارت', percentage: '35%', color: 'w3-red' },
         { text: 'حضرتك', percentage: '85%', color: 'w3-blue' },
     ];
 
@@ -21,6 +21,7 @@ function constantData() {
     const row2Data2 = [
         { text: 'انتظار', percentage: '10%', color: 'w3-green' },
         { text: 'لا', percentage: '60%', color: 'w3-purple' },
+        { text: 'عايز', percentage: '30%', color: 'w3-yellow' },
     ];
 
     const messageData1 = [
