@@ -17,34 +17,30 @@ function Analysis() {
         setCurrentCharts('chat2');
     };
 
-    // ... rest of your code ...
 
 
 
+let chart1Data1 = { options: {}, series: [] };
+let line1Data1 = { options: {}, series: [] };
+let chart2Data1 = { options: {}, series: [] };
+let line2Data1 = { options: {}, series: [] };
+
+// ...
 
 
-
-let chart1Data1 = [];
-let line1Data1 = [];
-let chart2Data1 = [];
-let line2Data1 = [];
 
 
 
 if (currentCharts === 'chat1') {
-    chart1Data1 = chart1Data1.concat(chart1Data);
-    line1Data1 = line1Data1.concat(lineChart1);
-    chart2Data1 = chart2Data1.concat(chart2Data);
-    line2Data1 = line2Data1.concat(lineChart2);
-
+    chart1Data1 = { options: chart1Data.options, series: chart1Data.series };
+    line1Data1 = { options: lineChart1.options, series: lineChart1.series };
+    chart2Data1 = { options: chart2Data.options, series: chart2Data.series };
+    line2Data1 = { options: lineChart2.options, series: lineChart2.series };
 } else if (currentCharts === 'chat2') {
-    chart1Data1 = chart1Data1.concat(chart1Data2);
-    line1Data1 = line1Data1.concat(lineChart12);
-    chart2Data1 = chart2Data1.concat(chart2Data2);
-    line2Data1 = line2Data1.concat(lineChart22);
-
-
-    
+    chart1Data1 = { options: chart1Data2.options, series: chart1Data2.series };
+    line1Data1 = { options: lineChart12.options, series: lineChart12.series };
+    chart2Data1 = { options: chart2Data2.options, series: chart2Data2.series };
+    line2Data1 = { options: lineChart22.options, series: lineChart22.series };
 }
 
 
@@ -54,20 +50,20 @@ return (
     <div id="Analysis">
         <div className='background'>
             <div id="Header1">Customer Analysis </div>
-            <Chart options={chart1Data2.options} series={chart1Data2.series} />
-            <LineChart options={lineChart12.options} series={lineChart12.series} />
+            <Chart options={chart1Data1.options} series={chart1Data1.series} />
+            <LineChart options={line1Data1.options} series={line1Data1.series} />
         </div>
         <div className='background'>
             <div id="Header2">Agent Analysis </div>
-            <Chart options={chart2Data2.options} series={chart2Data2.series} />
-            <LineChart options={lineChart22.options} series={lineChart22.series} />
+            <Chart options={chart2Data1.options} series={chart2Data1.series} />
+            <LineChart options={line2Data1.options} series={line2Data1.series} />
         </div>
         <div className='chats-list'>
             <div className='chats-list-container'>
                 <h2>Conversations List</h2>
                 <ul>
                 <li onClick={handleDisplayChat1}><span>1</span>List Item One</li>
-                        <li onClick={handleDisplayChat2}><span>2</span>List Item Two</li>
+                 <li onClick={handleDisplayChat2}><span>2</span>List Item Two</li>
                 </ul>
             </div>
         </div>
