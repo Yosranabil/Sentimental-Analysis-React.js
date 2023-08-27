@@ -8,7 +8,7 @@ function Chart(props) {
                 options={props.options}
                 series={props.series}
                 type="pie"
-                width="335"
+                width="305"
             />
         </div>
     );
