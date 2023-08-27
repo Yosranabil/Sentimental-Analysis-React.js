@@ -1,7 +1,7 @@
 /* Analysis.css */
 .background {
-    width: calc(100% - 120px);
-    height: 300px;
+    width: calc(100% - 500px);
+    height: 400px;
     background-color: white;
     display: flex;
     align-items: center;
@@ -11,6 +11,25 @@
     overflow: hidden;
     z-index: 0;
     margin: 20px 0 0 100px;
+}
+
+#Header1{
+    position: absolute;
+    margin-top: -320px;
+    margin-left: -720px;
+    font-size: xx-large;
+    font-family: Ar;
+    font-weight: bold;
+    color:rgba(55, 50, 50, 0.671); 
+}
+#Header2{
+    position: absolute;
+    margin-top: -320px;
+    margin-left: -770px;
+    font-size: xx-large;
+    font-family: Ar;
+    font-weight: bold;
+    color:rgba(12, 10, 10, 0.671); 
 }
 
 

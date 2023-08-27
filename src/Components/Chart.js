@@ -1,4 +1,5 @@
 import React from 'react';
+import './Chart.css';
 import ReactApexChart from 'react-apexcharts';
 
 function Chart(props) {
@@ -8,7 +9,7 @@ function Chart(props) {
                 options={props.options}
                 series={props.series}
                 type="pie"
-                width="305"
+                width="360"
             />
         </div>
     );
