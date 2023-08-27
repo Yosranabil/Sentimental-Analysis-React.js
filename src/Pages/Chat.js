@@ -52,8 +52,8 @@ function Chat() {
           <div className='chats-list-container'>
             <h2>Conversations List</h2>
             <ul>
-              <li><span>1</span>List Item One</li>
-              <li><span>2</span>List Item Two</li>
+              <li onClick={handleDisplayChat1}><span>1</span>List Item One</li>
+              <li onClick={handleDisplayChat2}><span>2</span>List Item Two</li>
             </ul>
           </div>
         </div>

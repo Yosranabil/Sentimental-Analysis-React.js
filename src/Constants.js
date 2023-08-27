@@ -38,7 +38,7 @@ function constantData() {
             color:"yellow",
         },
         {
-            text: "انا عندي مشكلة انا شحنت كرت رصيد من حوالي نص ساعة و موصلش",
+            text: "انا عندي مشكلة انا شحنت كارت رصيد من حوالي نص ساعة و موصلش",
             sender: "CR",
             timestamp: "12:35",
             color:"red",
