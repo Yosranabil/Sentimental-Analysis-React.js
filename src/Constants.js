@@ -1,26 +1,26 @@
 
 function constantData() {
     const row1Data1 = [
-        { text: 'شحن', percentage: '20%', color: 'w3-red' },
-        { text: 'كارت', percentage: '35%', color: 'w3-red' },
-        { text: 'حضرتك', percentage: '85%', color: 'w3-blue' },
+        { text: 'شحن', percentage: '20%', color: 'w3-black' },
+        { text: 'كارت', percentage: '35%', color: 'w3-blue' },
+        { text: 'حضرتك', percentage: '85%', color: 'w3-yellow' },
     ];
 
     const row2Data1 = [
-        { text: 'شكراً', percentage: '15%', color: 'w3-yellow' },
+        { text: 'شكراً', percentage: '15%', color: 'w3-green' },
         { text: 'ايوة', percentage: '10%', color: 'w3-light-green' },
-        { text: 'لا', percentage: '50%', color: 'w3-purple' },
-        { text: 'مشكلة', percentage: '20%', color: 'w3-light-blue' },
+        { text: 'لا', percentage: '50%', color: 'w3-orange' },
+        { text: 'مشكلة', percentage: '20%', color: 'w3-red' },
     ];
     const row1Data2 = [
-        { text: 'الشحن', percentage: '20%', color: 'w3-red' },
-        { text: 'استعلم', percentage: '10%', color: 'w3-black' },
-        { text: 'باقة', percentage: '90%', color: 'w3-blue' },
+        { text: 'الشحن', percentage: '20%', color: 'w3-black' },
+        { text: 'استعلم', percentage: '10%', color: 'w3-grey' },
+        { text: 'باقة', percentage: '90%', color: 'w3-light-green' },
     ];
 
     const row2Data2 = [
         { text: 'انتظار', percentage: '10%', color: 'w3-green' },
-        { text: 'لا', percentage: '60%', color: 'w3-purple' },
+        { text: 'لا', percentage: '60%', color: 'w3-orange' },
         { text: 'عايز', percentage: '30%', color: 'w3-yellow' },
     ];
 
