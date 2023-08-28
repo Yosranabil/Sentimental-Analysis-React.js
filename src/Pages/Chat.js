@@ -24,15 +24,18 @@ function Chat() {
   let row1Data;
   let row2Data;
   let messageData;
+  let audioFile;
 
   if (currentRows === 'row11' || currentMessages === messageData1) {
     row1Data = row1Data1;
     row2Data = row2Data1;
     messageData = messageData1;
+    audioFile = audioFile1;
   } else if (currentRows === 'row21' || currentMessages === messageData2) {
     row1Data = row1Data2;
     row2Data = row2Data2;
     messageData = messageData2;
+    audioFile = audioFile2;
   }
 
   return (
@@ -42,7 +45,7 @@ function Chat() {
         <div className='conv-container'>
           <div className='chatBox'>
             <div className="audio-container">
-            <AudioPlayer audioFile={messageData === messageData1 ? audioFile1 : audioFile2} />
+            <AudioPlayer key={audioFile} audioFile={audioFile} />
             </div>
             {messageData.map((message, index) => (
               <div className="message-container" key={index}>
