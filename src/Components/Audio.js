@@ -10,7 +10,7 @@ const AudioPlayer = ({ audioFile }) => {
   return (
     <div>
       <audio controls>
-        <source src={audioSource} type="audio/mpeg" />
+        <source src={audioSource} type="audio/mpeg"/>
         Your browser does not support the audio element.
       </audio>
     </div>
